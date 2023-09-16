@@ -19,7 +19,7 @@ function HavaDurumu() {
           setHavaDurumu(response.data);
         })
         .catch((error) => {
-          setHata("Hava durumu bilgileri alınamadı.");
+          /* setHata("Hava durumu bilgileri alınamadı."); */
           console.error(error);
         });
       console.log(havaDurumu);
@@ -46,14 +46,16 @@ function HavaDurumu() {
               alt={havaDurumu.weather[0].description}
               className="havaDurumuResmi"
             />
-            <p className="havaDurumuAciklamasi">
-              Hava Durumu: {havaDurumu.weather[0].description}
-            </p>
-            <p className="sicaklik">Sıcaklık: {havaDurumu.main.temp} °C</p>
-            <p className="nemOrani">Nem Oranı: {havaDurumu.main.humidity}%</p>
-            <p className="ruzgarHizi">
-              Rüzgar Hızı: {havaDurumu.wind.speed} m/s
-            </p>
+            <div className="detayDiv">
+              <p className="havaDurumuAciklamasi">
+                Hava Durumu: {havaDurumu.weather[0].description}
+              </p>
+              <p className="sicaklik">Sıcaklık: {havaDurumu.main.temp} °C</p>
+              <p className="nemOrani">Nem Oranı: {havaDurumu.main.humidity}%</p>
+              <p className="ruzgarHizi">
+                Rüzgar Hızı: {havaDurumu.wind.speed} m/s
+              </p>
+            </div>
           </div>
         )}
       </div>

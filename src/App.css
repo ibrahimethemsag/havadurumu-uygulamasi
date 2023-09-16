@@ -1,3 +1,43 @@
-hava {
-    font-size: 10rem;
+body{
+    background: url(chuttersnap-9AqIdzEc9pY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 90px;
+    overflow: hidden;
+}
+
+.genelKutu{
+    width: 30%;
+    height: 500px;
+    background: #fff;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    box-shadow: 50px 50px 170px 50px lightblue;
+    border: 1px solid lightblue;
+}
+.searchBar{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.havaDurumuAciklamasi{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.detayDiv {
+    font-weight: bold;
 }
